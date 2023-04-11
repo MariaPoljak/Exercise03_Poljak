@@ -17,8 +17,8 @@ def hamming(text1, text2):
     if len(text1) != len(text2):
         return 0
     distance = 0
-    for index in range(len(text1)):
-        if text1[index] != text2[index]:
+    for i in range(len(text1)):
+        if text1[i] != text2[i]:
             distance = distance + 1
     return distance and print('The hamming distance is:{}'.format(distance))
 
